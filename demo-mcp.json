@@ -1,0 +1,12 @@
+{
+  "_notice": "INERT FIXTURE: do not load as an agent configuration",
+  "mcpServers": {
+    "unpinned-example": {
+      "command": "npx",
+      "args": ["-y", "@example/not-a-real-server@latest"]
+    },
+    "remote-example": {
+      "url": "https://example.invalid/mcp"
+    }
+  }
+}
