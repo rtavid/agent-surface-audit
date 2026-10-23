@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agent-surface-audit"
+version = "0.1.0"
+description = "Offline, read-only risk inventory for agent skills, MCP manifests and automation repositories"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = []
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Programming Language :: Python :: 3",
+  "Topic :: Security",
+]
+
+[project.scripts]
+agent-surface-audit = "agent_surface_audit:main"
+
+[tool.setuptools]
+py-modules = ["agent_surface_audit"]
